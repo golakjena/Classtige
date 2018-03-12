@@ -1,0 +1,220 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0;}
+body, html { height:100%; width:100%;}
+form { height:100%; }
+body{ background:#ffffff; font-family:'OxygenRegular', Arial; font-size:14px; color:#666666; overflow-x:hidden; line-height: normal;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block;}
+img { max-width: 100%; height: auto; border:0; width: auto\9; /* ie8 */}
+a{ text-decoration:none; outline:0; border:0;}
+/*a:hover, a:focus{ text-decoration: none; border:0; outline: 0;}*/
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+.clr{ clear:both;}
+.push { height:115px;}
+ul, li{ list-style-type:none; margin: 0;}
+h1, h2, h3, h4, h5, h6{ font-weight:normal; margin: 0; padding: 0;}
+table{ border-collapse:collapse;}
+.fLeft{ float:left;}
+.fRight{ float:right;}
+.alignRight{ text-align:right;}
+.alignLeft{ text-align:left;}
+.alignCenter{ text-align:center;}
+.positionRelative{ position:relative;}
+*{ box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; -ms-box-sizing:border-box;}
+
+::-webkit-input-placeholder {color: #666;}
+:-moz-placeholder { color: #666; opacity: 1;}
+::-moz-placeholder { color: #666; opacity:  1;}
+:-ms-input-placeholder { color: #666;}
+:placeholder-shown { color: #666;}
+
+
+
+
+/********* Font Face ****************/
+@font-face {
+    font-family: 'OxygenRegular';
+    src: url('../fonts/Oxygen-Regular.eot');
+    src: url('../fonts/Oxygen-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Oxygen-Regular.woff2') format('woff2'),
+        url('../fonts/Oxygen-Regular.woff') format('woff'),
+        url('../fonts/Oxygen-Regular.ttf') format('truetype'),
+        url('../fonts/Oxygen-Regular.svg#Oxygen-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OxygenLight';
+    src: url('../fonts/Oxygen-Light.eot');
+    src: url('../fonts/Oxygen-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Oxygen-Light.woff2') format('woff2'),
+        url('../fonts/Oxygen-Light.woff') format('woff'),
+        url('../fonts/Oxygen-Light.ttf') format('truetype'),
+        url('../fonts/Oxygen-Light.svg#Oxygen-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OxygenBold';
+    src: url('../fonts/Oxygen-Bold.eot');
+    src: url('../fonts/Oxygen-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Oxygen-Bold.woff2') format('woff2'),
+        url('../fonts/Oxygen-Bold.woff') format('woff'),
+        url('../fonts/Oxygen-Bold.ttf') format('truetype'),
+        url('../fonts/Oxygen-Bold.svg#Oxygen-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Savoye LET';
+    src: url('../fonts/SavoyeLetPlain.eot');
+    src: url('../fonts/SavoyeLetPlain.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SavoyeLetPlain.woff') format('woff'),
+        url('../fonts/SavoyeLetPlain.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+
+/***
+Global Margin
+***/
+.mTop20{ margin: 20px 0 0 0;}
+
+/***
+Main CSS Rules
+***********/
+.homeWrapper{ position: relative; margin:75px 0 0 0;}
+.bgMobile{ display: none; }
+.homeWrapper > img{ width: 100%; vertical-align: top;}
+.homeContentOuter{ width: 100%; height: 100%; position: absolute; left: 0; top: 0; z-index: 9; }
+.homeContentInner{ max-width: 1120px; margin:0 auto; padding: 76px 0 100px 0; }
+.logo{ text-align: center; }
+/*.logo a{ display: inline-block;}*/
+.homeContentInner h2{ max-width: 800px; margin:0 auto; font-family: 'Savoye LET', Arial; font-size: 60px; text-align: center; line-height: 69px;color: #000; margin-top:100px; }
+.homeContentInner h3{ font-family: 'Savoye LET', Arial; font-size: 90px; text-align: center; margin:30px 0 0 0; color: #000;}
+.subscribeOuter{ max-width: 820px; margin:0 auto; padding: 20px 0 0 0;}
+.enterEmail{ width: 640px; float: left; }
+.enterEmail input[type="text"]{ font-family: 'OxygenRegular', Arial; width: 100%; border: 0; background: none; border-bottom: 2px #000 solid; outline: 0; font-size: 20px; color: #000; padding: 0 0 8px 0;}
+.btnSubscribe{ font-family: 'OxygenRegular', Arial; display: inline-block; margin:0 0 0 40px; font-size: 22px; text-transform: uppercase; color: #000; border: 0; outline: 0; background: none; cursor: pointer; }
+
+
+/***
+Blog
+***/
+.header{ width: 100%; position: fixed; left:0; top: 0; background: #252525; padding: 20px 0; z-index: 999;}
+.btnMobileNav{ width: 56px; height: 56px; background: #000; display: inline-block; position: fixed; left: 0; top: 0; display: none;}
+.btnMobileNav img{ vertical-align: top; margin:17px 0 0 10px;}
+.wrapper{ max-width: 1200px; margin: 0 auto; }
+.topNav{ font-size: 0; width: auto; float: left;}
+.topNav li{ display: inline-block; font-family: 'OxygenBold', Arial; font-size: 18px; position: relative; vertical-align: top;}
+.topNav li a{ display: block; color: #fff; padding: 6px 28px; transition: all 0.3s linear; -moz-transition: all 0.3s linear; -webkit-transition: all 0.3s linear;}
+.topNav li a:hover, .topNav li a.active{ background: #000;}
+.topNav li ul{ width: 180px; background: #000; position: absolute; left: 0; top: 34px; padding: 0 0 5px 0; display: none;}
+.topNav li ul li{ display: block;}
+.topNav li ul li a{ display: block; padding: 10px 28px;}
+.topNav li ul li a:hover{ background: #000;}
+.topNav li:hover ul{ display: block;}
+
+.headerSocial{ float: right; }
+.headerSocial li{ display: inline-block; margin:0 0 0 20px; vertical-align: middle;}
+.headerSocial li a{ display: block;}
+.headerSocial li a img{ vertical-align: top;}
+
+.blogContentOuter{ padding: 100px 0 0 0; margin:75px 0 0 0;}
+.logo2{ text-align: center; padding: 0 0 120px 0; }
+.blogContent{}
+.blogLeft{ width: 650px; float: left; text-align: center; margin:0 100px 50px 0; }
+.border{ display: inline-block; width: 106px; font-size: 0; height: 3px; background: #dedede; }
+.blogRow{ padding: 0 0 60px 0;}
+.blogRow:last-child{ padding: 0;}
+.blogRow h3{ font-family: 'OxygenBold', Arial; font-size: 24px; color: #666; line-height: 40px; text-transform: uppercase; padding: 0 0 60px 0;}
+.blogRow h4{ font-family: 'OxygenBold', Arial; font-size: 20px; color: #666; padding: 0 0 20px 0;}
+.blogRow p{ font-size: 18px; color: #666; line-height: 33px; padding: 0 0 50px 0;}
+.blogRow p a{ color: #666; text-transform: uppercase;}
+.blogRight{ display: block; overflow:hidden; }
+.blogRight h2{ text-transform: uppercase; text-align: center; font-family: 'OxygenBold', Arial; font-size: 20px; color: #000;}
+.subscribeOuter2{ padding: 50px 0; max-width: 386px; margin:0 auto;}
+.enterEmail2{ width: 230px; float: left; margin:0 30px 0 0;}
+.enterEmail2 input[type="text"]{ font-family: 'OxygenRegular', Arial; width: 100%; border: 0; background: none; border-bottom: 2px #D6D6D6 solid; outline: 0; font-size: 16px; color: #000; padding: 0 0 15px 0;}
+.btnSubscribe2{ font-family: 'OxygenRegular', Arial; display: block; margin:0 0 0 40px; font-size: 20px; text-transform: uppercase; color: #000; border: 0; outline: 0; background: none; cursor: pointer; overflow: hidden;}
+
+.stayConnected{ padding: 28px 0; border-top: 3px #E9E9E9 solid; border-bottom: 3px #E9E9E9 solid;}
+.cocialIcon{ text-align: center; padding: 25px 0 0 0;}
+.cocialIcon li{ display: inline-block; margin:0 10px;}
+.cocialIcon li a{ display: block;}
+
+.classtigeOuter{ padding: 54px 0 0 0; }
+.classtigeInner{ max-width: 410px; margin:0 auto; }
+.classtigeTop{ padding: 0 0 54px 0; }
+.classtigeIcon{ width: 89px; height: 89px; float: left; margin:0 20px 0 0;}
+.classtigeDesc{ display: block; overflow:hidden; padding: 10px 0 0 0;}
+.classtigeDesc h4{ font-family: 'OxygenBold', Arial; font-size: 26px; color: #666; padding: 0 0 5px 0;}
+.classtigeDesc p{ color: #909090; font-size: 18px;}
+
+.classtigeGallery{ text-align: center;}
+.classtigeGallery ul{ font-size: 0;}
+.classtigeGallery ul li{ display: inline-block; margin:0 5px 10px 5px;}
+.classtigeGallery ul li a{ display: block; overflow:hidden;}
+.classtigeGallery ul li a img{ vertical-align: top; transition: transform 0.2s linear; -moz-transition: transform 0.2s linear; -webkit-transition: transform 0.2s linear;}
+.classtigeGallery ul li a:hover img{ transform: scale(1.07); -moz-transform: scale(1.07); -webkit-transform: scale(1.07);}
+
+.blogImg{ margin: 0 0 30px 0; }
+.blogImg img{ vertical-align: top;}
+.blogRow h5{ text-align: left; font-size: 18px; }
+.txtArea{ width: 100%; background: #fff; border: 1px #ccc solid; padding: 10px; color: #666; font-size: 16px; line-height: 22px; resize:none; height: 75px; }
+
+/***
+About
+***/
+.aboutOuter{ padding:75px 0; text-align: center; margin:75px 0 0 0;}
+.aboutOuter h2{ font-family: 'OxygenBold', Arial; font-size: 50px; color: #666; text-transform: uppercase;}
+.aboutOuter h2 span{ border-bottom: 5px #ebebeb solid; padding: 0 0 10px 0; display: inline-block;}
+.aboutOuter h3{ font-family: 'OxygenBold', Arial; font-size: 24px; color: #666; padding: 50px 0;}
+.aboutOuter p{ font-family: 'OxygenLight', Arial; font-size: 18px; color: #666; line-height: 33px; padding: 0 0 30px 0;}
+.aboutOuter p a{ color: #00baff;}
+
+
+/***
+Portfolio
+***/
+.portfolioOuter{ padding:75px 0; text-align: center; margin:75px 0 0 0;}
+.portfolioInner{ max-width: 960px; margin:0 auto; }
+.portfolioGallery{ padding: 90px 0 0 0; max-width: 920px; margin:0 auto;}
+.portfolioOuter h2{ font-family: 'OxygenBold', Arial; font-size: 50px; color: #666; text-transform: uppercase;}
+.portfolioOuter h2 span{ border-bottom: 5px #ebebeb solid; padding: 0 0 10px 0; display: inline-block;}
+
+/*.grid{ font-size: 0; }
+.grid li { width: 306px; margin:0 0 20px 0;}
+.grid li a{ display: block;}
+.grid li a img{ vertical-align: top;}*/
+.grid li {
+    display: block;
+    float: left;
+    padding: 10px;
+    width: 306px;
+    opacity: 0;
+}
+.mfp-bottom-bar{ display: none; }
+
+
+
+/***
+Footer
+***/
+.footer{ border-top: 1px #ddd solid; padding: 20px 0;}
+.footer.noBdr{ border:0; width: 100%; position: absolute; left: 0; bottom: 0;}
+.footerInner{ max-width: 1200px; margin:0 auto; }
+.footerInner p{ font-size: 14px; float: left; color: #000; padding: 8px 0 0 0;}
+.social{ float: right; }
+.social li{ display: inline-block; margin:0 0 0 20px; vertical-align: middle;}
+.social li a{ display: block;}
+.footer.homeFooter{ width: 100%; position: absolute; left: 0; bottom: 0; }
+
+
+
+

@@ -1,0 +1,94 @@
+@media (min-width:320px) and (max-width:767px){
+	.homeContentInner{ padding: 40px 0; }
+	.homeWrapper{ margin:56px 0 0 0; }
+	/*.logo{ width: 230px; display: none;}*/
+	.btnMobileNav{ display: block; }
+	.homeContentInner h2{ font-size: 30px; line-height: 36px; margin:120px 0 0 0;}
+	.homeContentInner h3{ font-size: 56px; margin:20px 0 0 0; }
+	.subscribeOuter{ padding: 10px 0 0 0; }
+	.bgDesktop{ display: none; }
+	.bgMobile{ display: block; }
+	.homeContentOuter{ padding: 0 15px; }
+	.home{ background: #eeeae9; }
+	.enterEmail{ width: 100%; }
+	.btnSubscribe{ margin: 15px 0 0 0; font-size: 16px;}
+	.enterEmail input[type="text"]{ font-size: 16px; padding: 0 0 10px 0; }
+	
+	.header{ padding: 0; height: 56px; }
+	.topNav{ width: 180px; height: 100%; background: #000; position: fixed; left: -180px; top: 0; z-index: 99;}
+	.topNav li{ display: block; margin:0; }
+	.topNav li a{ display: block; padding:10px 15px; }
+	.topNav li ul{ display: block; position: relative; top: auto; left: auto; }
+	.headerSocial{ margin:14px 0 0 0;}
+	.headerSocial li{ margin:0 0 0 10px;}
+	.wrapper{ padding: 0 15px; }
+	.blogContentOuter{ margin: 56px 0 0 0; padding: 30px 0 10px 0; }
+	.logo2{ padding: 0 0 30px 0; }
+	.blogLeft{ width: 100%; margin:0; }
+	.blogRow{ padding: 0 0 30px 0; }
+	.blogRight{ width: 100%; overflow: visible; float: left; margin:30px 0 0 0;}
+	.blogRow h3{ font-size: 14px; line-height: 20px; padding: 0 0 30px 0; }
+	.blogRow h4{ font-size: 16px; }
+	.blogRow p{ font-size: 16px; line-height: 28px; padding: 0 0 20px 0; }
+	.blogRight h2{ font-size: 16px; }
+	.subscribeOuter2{ padding: 30px 0; }
+	.enterEmail2{ width: 100%; margin:0 ; }
+	.enterEmail2 input[type="text"]{ padding: 0 0 10px 0; }
+	.stayConnected{ padding: 20px 0; }
+	.classtigeOuter{ padding: 30px 0 0 0; }
+	.classtigeTop{ padding: 0 0 30px 0; }
+	.classtigeDesc h4{ font-size: 20px; }
+	.classtigeDesc p{ font-size: 14px; }
+	.btnSubscribe2{ font-size: 18px; margin:15px 0 0 0; display: inline-block; }
+	.classtigeGallery{ max-width: 300px; margin:0 auto; }
+	.classtigeGallery ul li{ width: 86px; }
+
+	
+	.aboutOuter{ margin:56px 0 0 0; padding: 30px 0;}
+	.portfolioOuter{ margin:56px 0 0 0; padding: 30px 0;}
+	.portfolioGallery{ padding: 30px 0 0 0; }
+	.portfolioOuter h2{ font-size: 32px;}
+	.aboutOuter h2{ font-size: 32px; }
+	.aboutOuter h3{ font-size: 20px; padding: 30px 0; }
+	.aboutOuter p{ font-size: 16px; line-height: 28px; padding: 0 0 20px 0; }
+	.grid {max-width: 98%; list-style: none; margin: 0 auto; padding: 0;}
+	.grid li{ width: 50%; padding: 6px; }	
+	.footer{ padding: 10px 0; border-top: 1px #ccc solid;}
+	.footerInner p{ width: 100%; float: left; font-size: 12px; text-align: center; padding: 0 0 15px 0;}
+	.social{ width: 100%; float: left; text-align: center;}
+	.social li{ margin:0 5px; }
+	.footer.noBdr{ position: relative; border-top: 1px #ccc solid;}
+}
+
+
+@media (min-width:768px) and (max-width:1024px){
+	.homeContentInner{ padding: 50px 0; }
+	.homeContentInner h2{ max-width: 700px; font-size: 46px; line-height: 54px; margin-top: 50px;}
+	.subscribeOuter{ padding: 50px 0 0 0;}
+	.bgDesktop{ display: none; }
+	.bgMobile{ display: block; }
+	.homeContentOuter{ padding: 0 15px; }
+	.home{ background: #eeeae9; }
+	.enterEmail{ width: 500px; }
+	
+	.header{ padding: 20px 0; }
+	.headerSocial{ margin:5px 0 0 0; }
+	.wrapper{ padding: 0 15px; }
+	.blogContentOuter{ margin: 76px 0 0 0; padding: 50px 0 30px 0; }
+	.logo2{ padding: 0 0 50px 0; }
+	.blogLeft{ width: 50%; margin:0 30px 0 0; }
+	.blogRow h3{ font-size: 18px; line-height: 26px; padding: 0 0 30px 0; }
+	.blogRow p{ font-size: 16px; line-height: 28px; padding: 0 0 20px 0; }
+	.enterEmail2{ width: 200px; margin:0 20px 0 0; }
+	.btnSubscribe2{ font-size: 18px; margin:0; }
+	.classtigeGallery ul li{ width: 100px; }
+	
+	.aboutOuter{ margin:76px 0 0 0; padding: 50px 0;}
+	.portfolioOuter{ margin:76px 0 0 0; padding: 50px 0;}
+
+	.grid {max-width: 720px; list-style: none;margin: 0 auto; padding: 0;}
+	.grid li{ width: 240px; }	
+	.footer{ padding: 20px 15px; }
+	.footer.noBdr{ position: fixed; width: 100%; left: 0; bottom: 0; }
+
+}
